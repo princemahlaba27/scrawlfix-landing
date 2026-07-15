@@ -1,5 +1,5 @@
 import { ArrowRight, Check } from "lucide-react";
-import noteImg from "@/assets/raw-handwriting-note.jpg.asset.json";
+import noteImg from "@/assets/raw-handwriting-note.jpg";
 
 export function ShowdownCompare() {
   return (
@@ -24,7 +24,7 @@ export function ShowdownCompare() {
             </div>
             <div className="flex flex-1 items-center justify-center overflow-hidden rounded-xl border border-border/60 bg-white p-3 shadow-inner">
               <img
-                src={noteImg.url}
+                src={noteImg}
                 alt="Handwritten Marketing Sync Q3 notes with scribbles and cross-outs"
                 className="h-auto max-w-[70%] w-full rounded-lg object-contain"
                 loading="lazy"

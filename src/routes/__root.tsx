@@ -77,23 +77,30 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "ScrawlFix — Turn Handwriting into Clean, Editable Text" },
+      { title: "ScrawlFix — Turn Handwriting Into Clean, Editable Text Instantly" },
       {
         name: "description",
         content:
-          "ScrawlFix turns messy handwriting into clean, copy-paste-ready text. 5 free scans every month — no watermark, no bait-and-switch.",
-      },
-      { name: "author", content: "Anti Coder Studio" },
-      { property: "og:title", content: "ScrawlFix — Handwriting to Text" },
-      {
-        property: "og:description",
-        content:
-          "Snap a photo of your handwriting, get clean editable text instantly. 5 free scans every month.",
+          "Stop retyping meeting or lecture notes. Scan multi-page handwriting and instantly get structured, copy-paste ready text formats.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:url", content: "https://scrawlfix.com/" },
+      {
+        property: "og:title",
+        content: "ScrawlFix — Turn Handwriting Into Clean, Editable Text Instantly",
+      },
+      {
+        property: "og:description",
+        content: "Scan multi-page handwriting and instantly get structured, copy-paste ready text formats.",
+      },
+      { property: "og:image", content: "https://scrawlfix.com/og-preview.png" },
+      { property: "twitter:card", content: "summary_large_image" },
+      { property: "twitter:url", content: "https://scrawlfix.com/" },
+      { property: "twitter:title", content: "ScrawlFix — Handwriting Digitization" },
+      { property: "twitter:description", content: "Turn scribbled pages into clean docs." },
     ],
     links: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },

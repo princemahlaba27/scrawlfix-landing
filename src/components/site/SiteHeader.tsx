@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/scrawlfix-feather.png.asset.json";
+import logoAsset from "@/assets/scrawlfix-feather.png";
 import { GooglePlayButton } from "./GooglePlayButton";
 
 export function Logotype({ className = "" }: { className?: string }) {
@@ -30,7 +30,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
         {/* Left: Logo + wordmark */}
         <Link to="/" className="flex items-center gap-2" aria-label="ScrawlFix home">
-          <img src={logoAsset.url} alt="" className="h-9 w-auto" />
+          <img src={logoAsset} alt="ScrawlFix Logo" className="h-9 w-auto" />
           <span className="text-xl font-extrabold tracking-tight text-accent-teal">
             ScrawlFix
           </span>

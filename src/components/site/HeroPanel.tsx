@@ -1,6 +1,6 @@
 import { GooglePlayButton } from "./GooglePlayButton";
 import { Check, Star } from "lucide-react";
-import heroMock from "@/assets/hero-mock-combined.png.asset.json";
+import heroMock from "@/assets/hero-mock-combined.png";
 
 
 
@@ -51,7 +51,7 @@ export function HeroPanel() {
         {/* Right: pre-composed Figma hero mockup */}
         <div className="relative flex min-w-0 items-center justify-center overflow-visible">
           <img
-            src={heroMock.url}
+            src={heroMock}
             alt="ScrawlFix scanning a handwritten grocery list and transforming it into clean digital text"
             width={700}
             height={700}
