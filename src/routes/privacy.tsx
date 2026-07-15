@@ -1,27 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { ContactEmail } from "@/components/site/ContactEmail";
-
-export const Route = createFileRoute("/privacy")({
-  head: () => ({
-    meta: [
-      { title: "Privacy Policy — ScrawlFix" },
-      {
-        name: "description",
-        content:
-          "How ScrawlFix handles your handwritten scans, third-party services, data retention, and your rights. Last updated June 2026.",
-      },
-      { property: "og:title", content: "Privacy Policy — ScrawlFix" },
-      {
-        property: "og:description",
-        content:
-          "ScrawlFix does not store your scanned images. Read the full policy.",
-      },
-    ],
-  }),
-  component: PrivacyPage,
-});
 
 function Section({
   n,
@@ -45,7 +25,11 @@ function Section({
   );
 }
 
-function PrivacyPage() {
+export function PrivacyPage() {
+  useEffect(() => {
+    document.title = "Privacy Policy — ScrawlFix";
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <SiteHeader />
@@ -60,7 +44,7 @@ function PrivacyPage() {
 
           <div className="mt-8 space-y-4 text-[15px] leading-relaxed text-foreground/80">
             <p>
-              ScrawlFix ("we," "our," or "the app") is a mobile application that
+               ScrawlFix ("we," "our," or "the app") is a mobile application that
               converts handwritten text into typed digital text using artificial
               intelligence. This Privacy Policy explains what information we
               collect, how we use it, and your rights regarding that information.

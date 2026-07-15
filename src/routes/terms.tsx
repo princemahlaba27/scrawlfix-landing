@@ -1,26 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { useEffect } from "react";
 import { SiteHeader } from "@/components/site/SiteHeader";
 import { SiteFooter } from "@/components/site/SiteFooter";
 import { ContactEmail } from "@/components/site/ContactEmail";
-
-export const Route = createFileRoute("/terms")({
-  head: () => ({
-    meta: [
-      { title: "Terms of Service — ScrawlFix" },
-      {
-        name: "description",
-        content:
-          "The rules for using ScrawlFix: license, acceptable use, subscriptions, disclaimers, and contact. Last updated June 2026.",
-      },
-      { property: "og:title", content: "Terms of Service — ScrawlFix" },
-      {
-        property: "og:description",
-        content: "Read the ScrawlFix Terms of Service.",
-      },
-    ],
-  }),
-  component: TermsPage,
-});
 
 function Section({
   n,
@@ -44,7 +25,11 @@ function Section({
   );
 }
 
-function TermsPage() {
+export function TermsPage() {
+  useEffect(() => {
+    document.title = "Terms of Service — ScrawlFix";
+  }, []);
+
   return (
     <div className="flex min-h-screen flex-col bg-background text-foreground">
       <SiteHeader />
