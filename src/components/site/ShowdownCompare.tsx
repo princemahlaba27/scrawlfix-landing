@@ -1,5 +1,5 @@
 import { ArrowRight, Check } from "lucide-react";
-import noteImg from "@/assets/raw-handwriting-note.jpg";
+import noteImg from "@/assets/raw-handwriting-note.jpeg";
 
 export function ShowdownCompare() {
   return (
@@ -22,11 +22,11 @@ export function ShowdownCompare() {
               <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Raw Handwriting Input</span>
               <span className="rounded-full bg-black/5 px-2 py-0.5 text-[10px] font-medium text-foreground/70">PHOTO</span>
             </div>
-            <div className="flex flex-1 items-center justify-center overflow-hidden rounded-xl border border-border/60 bg-white p-3 shadow-inner">
+            <div className="relative flex flex-1 min-h-[280px] items-center justify-center overflow-hidden rounded-xl border border-border/60 bg-white shadow-inner">
               <img
                 src={noteImg}
                 alt="Handwritten Marketing Sync Q3 notes with scribbles and cross-outs"
-                className="h-auto max-w-[70%] w-full rounded-lg object-contain"
+                className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"
                 decoding="async"
                 draggable={false}

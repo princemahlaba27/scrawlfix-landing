@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import logoAsset from "@/assets/scrawlfix-feather.png";
+import logoAsset from "@/assets/scrawlfix_minimal_feather_logo-removebg-preview.png";
 import { GooglePlayButton } from "./GooglePlayButton";
 
 export function Logotype({ className = "" }: { className?: string }) {
