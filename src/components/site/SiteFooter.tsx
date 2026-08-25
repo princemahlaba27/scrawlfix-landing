@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Logotype } from "./SiteHeader";
-import { GooglePlayButton } from "./GooglePlayButton";
+import { AppStoreButton } from "./AppStoreButton";
 import { ContactEmail } from "./ContactEmail";
 
 export function SiteFooter() {
@@ -14,13 +14,15 @@ export function SiteFooter() {
               Turn messy handwriting into clean, editable text — instantly. Built by Anti Coder Studio.
             </p>
             <div className="mt-5">
-              <GooglePlayButton size="md" />
+              <AppStoreButton size="md" />
             </div>
           </div>
           <div>
             <div className="text-sm font-semibold">Product</div>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li><Link to="/" className="hover:text-foreground">Home</Link></li>
+              <li><a href="/#features" className="hover:text-foreground">Features</a></li>
+              <li><a href="/#comparison" className="hover:text-foreground">Comparison</a></li>
               <li><a href="/#faq" className="hover:text-foreground">FAQ</a></li>
               <li><a href="/#compare" className="hover:text-foreground">How it compares</a></li>
             </ul>

@@ -73,8 +73,8 @@ export function PrivacyPage() {
             </p>
             <p>
               <strong>Subscription and purchase information.</strong> If you
-              subscribe to ScrawlFix Pro, payment is processed through Google
-              Play's billing system and managed via RevenueCat, our subscription
+              subscribe to ScrawlFix Pro, payment is processed through the Apple
+              App Store and managed via RevenueCat, our subscription
               management provider. We do not directly collect or store your
               payment card details. RevenueCat may collect anonymized purchase
               and device identifiers to manage your subscription status.
@@ -120,9 +120,9 @@ export function PrivacyPage() {
                 and purchases.
               </li>
               <li>
-                <strong>Google Play Billing</strong> — used to process
+                <strong>Apple App Store</strong> — used to process
                 subscription payments. Payment information is handled directly
-                by Google and is not accessible to us.
+                by Apple and is not accessible to us.
               </li>
             </ul>
           </Section>
