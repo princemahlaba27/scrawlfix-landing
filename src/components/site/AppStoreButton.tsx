@@ -20,6 +20,8 @@ export function AppStoreButton({
       <img
         src={badge}
         alt="Download on the App Store"
+        width={787}
+        height={317}
         className={`${height} w-auto`}
         decoding="async"
         draggable={false}

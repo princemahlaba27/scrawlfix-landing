@@ -18,8 +18,14 @@ const navItems: { label: string; href: string; to?: "/" | "/privacy" | "/terms" 
 
 export function Logotype({ className = "" }: { className?: string }) {
   return (
-    <span className={`inline-flex items-center gap-2 font-extrabold tracking-tight text-xl ${className}`}>
-      <img src={logoAsset} alt="" className="h-8 w-auto" />
+    <span className={`inline-flex items-center gap-2.5 font-extrabold tracking-tight text-xl ${className}`}>
+      <img
+        src={logoAsset}
+        alt=""
+        width={36}
+        height={36}
+        className="h-9 w-9 shrink-0 rounded-[22%] object-cover shadow-sm ring-1 ring-black/10"
+      />
       <span>
         Scrawl<span className="text-accent-teal">Fix</span>
       </span>
@@ -40,11 +46,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 backdrop-blur supports-[backdrop-filter]:bg-background/70">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <Link to="/" className="flex items-center gap-2" aria-label="ScrawlFix home">
-          <img src={logoAsset} alt="ScrawlFix Logo" className="h-9 w-auto" />
-          <span className="text-xl font-extrabold tracking-tight text-accent-teal">
-            ScrawlFix
-          </span>
+        <Link to="/" className="flex items-center" aria-label="ScrawlFix home">
+          <Logotype />
         </Link>
 
         <nav className="hidden items-center gap-5 lg:flex">

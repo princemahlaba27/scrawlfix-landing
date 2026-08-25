@@ -36,6 +36,8 @@ export function ShowdownCompare() {
               <img
                 src={noteImg}
                 alt="Handwritten economics lecture notes on price elasticity and market structure"
+                width={1024}
+                height={1536}
                 className="max-h-[340px] w-auto max-w-full rounded-lg object-contain"
                 loading="lazy"
                 decoding="async"
