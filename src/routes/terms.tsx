@@ -120,10 +120,10 @@ export function TermsPage() {
             <p>
               <strong>ScrawlFix Pro</strong> is an optional paid subscription
               that unlocks higher monthly limits. Subscriptions are sold and
-              billed through Google Play Billing and managed via RevenueCat.
+              billed through the Apple App Store and managed via RevenueCat.
               Subscriptions renew automatically until cancelled. You can manage
-              or cancel your subscription at any time through your Google Play
-              account. Refunds are subject to Google Play's refund policy.
+              or cancel your subscription at any time through your Apple ID /
+              App Store account. Refunds are subject to Apple's refund policy.
             </p>
           </Section>
 
@@ -144,7 +144,7 @@ export function TermsPage() {
           <Section n={8} title="Third-Party Services">
             <p>
               ScrawlFix integrates with third-party services including Google
-              Gemini API, RevenueCat, and Google Play Billing. Your use of those
+              Gemini API, RevenueCat, and the Apple App Store. Your use of those
               services through ScrawlFix is also subject to their own terms and
               privacy policies.
             </p>

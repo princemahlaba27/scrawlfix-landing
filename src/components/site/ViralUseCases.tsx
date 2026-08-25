@@ -24,7 +24,7 @@ const cards = [
 
 export function ViralUseCases() {
   return (
-    <section className="border-b border-border bg-background">
+    <section id="features" className="border-b border-border bg-background">
       <div className="mx-auto max-w-6xl px-5 py-20 md:py-24">
         <div className="mx-auto max-w-2xl text-center">
           <div className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-teal">Real moments</div>

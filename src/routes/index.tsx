@@ -10,7 +10,7 @@ import { FaqSection } from "@/components/site/FaqSection";
 
 export function LandingPage() {
   useEffect(() => {
-    document.title = "ScrawlFix — Turn Handwriting Into Clean, Editable Text Instantly";
+    document.title = "ScrawlFix — Turn Messy Lecture Notes into Clean AI Study Sets";
   }, []);
 
   return (
