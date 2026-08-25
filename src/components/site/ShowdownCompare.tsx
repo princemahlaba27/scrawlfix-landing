@@ -25,20 +25,20 @@ export function ShowdownCompare() {
         </div>
 
         <div className="mt-12 grid items-stretch gap-5 lg:grid-cols-[1fr_auto_1fr]">
-          <div className="flex flex-col rounded-2xl border border-border bg-[#fdfaf3] p-5 sm:p-6 shadow-sm">
+          <div className="flex min-h-0 flex-col rounded-2xl border border-border bg-[#fdfaf3] p-5 sm:p-6 shadow-sm">
             <div className="mb-4 flex items-center justify-between gap-3">
               <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
                 Raw Handwriting Input (Lecture Note)
               </span>
               <span className="rounded-full bg-black/5 px-2 py-0.5 text-[10px] font-medium text-foreground/70">PHOTO</span>
             </div>
-            <div className="flex flex-1 min-h-[300px] items-center justify-center overflow-hidden rounded-xl border border-border/60 bg-slate-50 p-4 shadow-inner">
+            <div className="relative min-h-[280px] flex-1 overflow-hidden rounded-xl sm:min-h-[340px]">
               <img
                 src={noteImg}
                 alt="Handwritten economics lecture notes on price elasticity and market structure"
                 width={1024}
                 height={1536}
-                className="max-h-[340px] w-auto max-w-full rounded-lg object-contain"
+                className="absolute inset-0 h-full w-full object-cover"
                 loading="lazy"
                 decoding="async"
                 draggable={false}
@@ -52,7 +52,7 @@ export function ShowdownCompare() {
             </div>
           </div>
 
-          <div className="flex flex-col rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm">
+          <div className="flex min-h-0 flex-col rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-sm">
             <div className="mb-4 flex items-center justify-between">
               <span className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">ScrawlFix AI Output</span>
               <span className="rounded-full bg-accent-teal/10 px-2 py-0.5 text-[10px] font-semibold text-accent-teal">MARKDOWN</span>

@@ -7,7 +7,7 @@ export function SiteFooter() {
   return (
     <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-6xl px-5 py-14">
-        <div className="grid gap-10 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-2">
           <div>
             <Logotype />
             <p className="mt-3 max-w-xs text-sm text-muted-foreground">
@@ -21,15 +21,7 @@ export function SiteFooter() {
             <div className="text-sm font-semibold">Product</div>
             <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li><Link to="/" className="hover:text-foreground">Home</Link></li>
-              <li><a href="/#features" className="hover:text-foreground">Features</a></li>
-              <li><a href="/#comparison" className="hover:text-foreground">Comparison</a></li>
               <li><a href="/#faq" className="hover:text-foreground">FAQ</a></li>
-              <li><a href="/#compare" className="hover:text-foreground">How it compares</a></li>
-            </ul>
-          </div>
-          <div>
-            <div className="text-sm font-semibold">Legal &amp; Contact</div>
-            <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
               <li><Link to="/privacy" className="hover:text-foreground">Privacy Policy</Link></li>
               <li><Link to="/terms" className="hover:text-foreground">Terms of Service</Link></li>
               <li>

@@ -8,9 +8,7 @@ const navLinkClass =
   "text-sm font-medium text-foreground/70 hover:text-foreground transition-colors";
 
 const navItems: { label: string; href: string; to?: "/" | "/privacy" | "/terms" }[] = [
-  { label: "Home", href: "/", to: "/" },
-  { label: "Features", href: "/#features" },
-  { label: "Comparison", href: "/#comparison" },
+  { label: "Home", href: "/#hero" },
   { label: "FAQ", href: "/#faq" },
   { label: "Privacy", href: "/privacy", to: "/privacy" },
   { label: "Terms", href: "/terms", to: "/terms" },

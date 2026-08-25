@@ -8,7 +8,7 @@ export function AppStoreButton({
   size?: "lg" | "md" | "sm";
   className?: string;
 }) {
-  const height = size === "lg" ? "h-12" : size === "md" ? "h-10" : "h-8";
+  const height = size === "lg" ? "h-14" : size === "md" ? "h-11" : "h-[2.375rem]";
   return (
     <a
       href={APP_STORE_URL}
